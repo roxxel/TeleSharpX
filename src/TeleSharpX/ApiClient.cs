@@ -17,6 +17,7 @@ namespace TeleSharpX
         {
             _token = token;
             _client = new HttpClient();
+            _client.Timeout = TimeSpan.FromSeconds(30);
         }
 
         public async Task<ApiResponse<T>> Send<T>(string methodName, HttpMethod method, object body)

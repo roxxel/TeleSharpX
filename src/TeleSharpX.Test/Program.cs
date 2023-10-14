@@ -9,8 +9,12 @@ var client = new TelegramClient(new()
     Token = cfg.BotToken
 });
 
-var me = await client.SendMessageAsync(774616838,"test");
+client.OnMessage += (sender, message) =>
+{
+    Console.WriteLine(message.From.FirstName + " " + message.Text);
+};
 
+await client.StartPolling();
 class Config
 {
     public string BotToken { get; set; }

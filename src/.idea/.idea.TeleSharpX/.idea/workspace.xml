@@ -8,80 +8,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b44261-5817-4c52-a854-86125d3e8881" name="Changes" comment="Initial commit (half working types)">
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/ApiClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/ApiResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/TelegramClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/Types/InputFile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/Types/InputMedia.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/Types/MenuButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/Types/PassportElementError.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/Types/ReplyMarkup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scripts/mv.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../scripts/mv.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scripts/types-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/../scripts/types-generator.js" afterDir="false" />
+    <list default="true" id="50b44261-5817-4c52-a854-86125d3e8881" name="Changes" comment="whoops, i forgot to git add .">
+      <change afterPath="$PROJECT_DIR$/TeleSharpX/Polling.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TeleSharpX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TeleSharpX/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/TeleSharpX.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/TeleSharpX.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeAllChatAdministrators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeAllChatAdministrators.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeAllGroupChats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeAllGroupChats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeAllPrivateChats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeAllPrivateChats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeChat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeChat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeChatAdministrators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeChatAdministrators.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeChatMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeChatMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeDefault.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/BotCommandScopeDefault.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/Chat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/Chat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/EncryptedPassportElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/EncryptedPassportElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/ForceReply.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/ForceReply.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineKeyboardMarkup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineKeyboardMarkup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedDocument.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedDocument.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedGif.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedGif.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedMpeg4Gif.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedMpeg4Gif.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedPhoto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedPhoto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedVideo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedVideo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedVoice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultCachedVoice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultDocument.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultDocument.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultGif.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultGif.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultMpeg4Gif.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultMpeg4Gif.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultPhoto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultPhoto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultVideo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultVideo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultVoice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InlineQueryResultVoice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputContactMessageContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InputContactMessageContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputInvoiceMessageContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InputInvoiceMessageContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputLocationMessageContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InputLocationMessageContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputMediaAnimation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputMediaAudio.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputMediaDocument.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputMediaPhoto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InputMediaPhoto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputMediaVideo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputSticker.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputTextMessageContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InputTextMessageContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputVenueMessageContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InputVenueMessageContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/MenuButtonCommands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/MenuButtonCommands.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/MenuButtonDefault.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/MenuButtonDefault.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/MenuButtonWebApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/MenuButtonWebApp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/Message.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/PassportData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/PassportData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/PassportElementErrorFiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/PassportElementErrorFiles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/PassportElementErrorTranslationFiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/PassportElementErrorTranslationFiles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/Poll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/Poll.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/PollAnswer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/PollAnswer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/ReplyKeyboardMarkup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/ReplyKeyboardMarkup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/ReplyKeyboardRemove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/ReplyKeyboardRemove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/ShippingOption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/ShippingOption.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/StickerSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/StickerSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/UserProfilePhotos.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/UserProfilePhotos.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/VideoChatParticipantsInvited.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/VideoChatParticipantsInvited.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/WebhookInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/WebhookInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeleSharpX.Test/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX.Test/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeleSharpX.Test/TeleSharpX.Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX.Test/TeleSharpX.Test.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeleSharpX/ApiClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/ApiClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeleSharpX/TelegramClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/TelegramClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/Update.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/Update.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -117,27 +63,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
-      &quot;/Users/mac/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
+      "/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
+      "/Users/mac/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.TeleSharpX.Test">
     <configuration name="TeleSharpX" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -186,6 +133,7 @@
       <updated>1697220662648</updated>
       <workItem from="1697220664229" duration="44000" />
       <workItem from="1697223151484" duration="6652000" />
+      <workItem from="1697293457575" duration="3417000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit (half working types)">
       <option name="closed" value="true" />
@@ -195,7 +143,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697287663048</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Working methods (except cases when sending files using multipart form data)">
+      <option name="closed" value="true" />
+      <created>1697293748076</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697293748077</updated>
+    </task>
+    <task id="LOCAL-00003" summary="whoops, i forgot to git add .">
+      <option name="closed" value="true" />
+      <created>1697294015477</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697294015477</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,25 +169,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit (half working types)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit (half working types)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TeleSharpX/ApiClient.cs</url>
-          <line>26</line>
-          <properties documentPath="$PROJECT_DIR$/TeleSharpX/ApiClient.cs" initialLine="26" containingFunctionPresentation="Method 'Send'">
-            <startOffsets>
-              <option value="808" />
-            </startOffsets>
-            <endOffsets>
-              <option value="837" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Working methods (except cases when sending files using multipart form data)" />
+    <MESSAGE value="whoops, i forgot to git add ." />
+    <option name="LAST_COMMIT_MESSAGE" value="whoops, i forgot to git add ." />
   </component>
 </project>
