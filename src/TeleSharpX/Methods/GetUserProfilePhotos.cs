@@ -14,10 +14,10 @@ public static class GetUserProfilePhotos
     {
         var api = cl._apiClient;
         var body = new {
-			user_id = userId,
-			offset = offset,
-			limit = limit
-		};
+            user_id = userId,
+            offset = offset,
+            limit = limit
+        };
         var resp = await api.Send<UserProfilePhotos>("getUserProfilePhotos", System.Net.Http.HttpMethod.Get, body);
         if (resp.Ok)
         {

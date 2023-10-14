@@ -14,10 +14,10 @@ public static class SendChatAction
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			action = action,
-			message_thread_id = messageThreadId
-		};
+            chat_id = chatId,
+            action = action,
+            message_thread_id = messageThreadId
+        };
         var resp = await api.Send<bool>("sendChatAction", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

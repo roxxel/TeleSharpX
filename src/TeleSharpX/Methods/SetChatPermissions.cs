@@ -14,10 +14,10 @@ public static class SetChatPermissions
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			permissions = permissions,
-			use_independent_chat_permissions = useIndependentChatPermissions
-		};
+            chat_id = chatId,
+            permissions = permissions,
+            use_independent_chat_permissions = useIndependentChatPermissions
+        };
         var resp = await api.Send<bool>("setChatPermissions", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

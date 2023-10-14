@@ -14,11 +14,11 @@ public static class BanChatMember
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			user_id = userId,
-			until_date = untilDate,
-			revoke_messages = revokeMessages
-		};
+            chat_id = chatId,
+            user_id = userId,
+            until_date = untilDate,
+            revoke_messages = revokeMessages
+        };
         var resp = await api.Send<bool>("banChatMember", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

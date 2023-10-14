@@ -14,14 +14,14 @@ public static class SetGameScore
     {
         var api = cl._apiClient;
         var body = new {
-			user_id = userId,
-			score = score,
-			force = force,
-			disable_edit_message = disableEditMessage,
-			chat_id = chatId,
-			message_id = messageId,
-			inline_message_id = inlineMessageId
-		};
+            user_id = userId,
+            score = score,
+            force = force,
+            disable_edit_message = disableEditMessage,
+            chat_id = chatId,
+            message_id = messageId,
+            inline_message_id = inlineMessageId
+        };
         var resp = await api.Send<Message>("setGameScore", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

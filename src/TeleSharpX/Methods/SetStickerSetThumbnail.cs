@@ -14,10 +14,10 @@ public static class SetStickerSetThumbnail
     {
         var api = cl._apiClient;
         var body = new {
-			name = name,
-			user_id = userId,
-			thumbnail = thumbnail
-		};
+            name = name,
+            user_id = userId,
+            thumbnail = thumbnail
+        };
         var resp = await api.Send<bool>("setStickerSetThumbnail", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

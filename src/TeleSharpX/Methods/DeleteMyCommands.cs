@@ -14,9 +14,9 @@ public static class DeleteMyCommands
     {
         var api = cl._apiClient;
         var body = new {
-			scope = scope,
-			language_code = languageCode
-		};
+            scope = scope,
+            language_code = languageCode
+        };
         var resp = await api.Send<bool>("deleteMyCommands", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

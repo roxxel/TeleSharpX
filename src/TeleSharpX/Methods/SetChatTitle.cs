@@ -14,9 +14,9 @@ public static class SetChatTitle
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			title = title
-		};
+            chat_id = chatId,
+            title = title
+        };
         var resp = await api.Send<bool>("setChatTitle", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

@@ -14,10 +14,10 @@ public static class SetChatAdministratorCustomTitle
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			user_id = userId,
-			custom_title = customTitle
-		};
+            chat_id = chatId,
+            user_id = userId,
+            custom_title = customTitle
+        };
         var resp = await api.Send<bool>("setChatAdministratorCustomTitle", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

@@ -14,11 +14,11 @@ public static class StopMessageLiveLocation
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			message_id = messageId,
-			inline_message_id = inlineMessageId,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            message_id = messageId,
+            inline_message_id = inlineMessageId,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("stopMessageLiveLocation", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

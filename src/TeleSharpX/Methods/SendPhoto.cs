@@ -14,19 +14,19 @@ public static class SendPhoto
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			photo = photo,
-			message_thread_id = messageThreadId,
-			caption = caption,
-			parse_mode = parseMode.ToString(),
-			caption_entities = captionEntities,
-			has_spoiler = hasSpoiler,
-			disable_notification = disableNotification,
-			protect_content = protectContent,
-			reply_to_message_id = replyToMessageId,
-			allow_sending_without_reply = allowSendingWithoutReply,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            photo = photo,
+            message_thread_id = messageThreadId,
+            caption = caption,
+            parse_mode = parseMode.ToString(),
+            caption_entities = captionEntities,
+            has_spoiler = hasSpoiler,
+            disable_notification = disableNotification,
+            protect_content = protectContent,
+            reply_to_message_id = replyToMessageId,
+            allow_sending_without_reply = allowSendingWithoutReply,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("sendPhoto", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

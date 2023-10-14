@@ -14,9 +14,9 @@ public static class SetChatMenuButton
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			menu_button = menuButton
-		};
+            chat_id = chatId,
+            menu_button = menuButton
+        };
         var resp = await api.Send<bool>("setChatMenuButton", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

@@ -14,11 +14,11 @@ public static class GetForumTopicIconStickers
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			name = name,
-			icon_color = iconColor,
-			icon_custom_emoji_id = iconCustomEmojiId
-		};
+            chat_id = chatId,
+            name = name,
+            icon_color = iconColor,
+            icon_custom_emoji_id = iconCustomEmojiId
+        };
         var resp = await api.Send<System.Collections.Generic.IEnumerable<Sticker>>("getForumTopicIconStickers", System.Net.Http.HttpMethod.Get, body);
         if (resp.Ok)
         {

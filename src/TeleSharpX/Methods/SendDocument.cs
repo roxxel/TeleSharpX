@@ -14,20 +14,20 @@ public static class SendDocument
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			document = document,
-			message_thread_id = messageThreadId,
-			thumbnail = thumbnail,
-			caption = caption,
-			parse_mode = parseMode.ToString(),
-			caption_entities = captionEntities,
-			disable_content_type_detection = disableContentTypeDetection,
-			disable_notification = disableNotification,
-			protect_content = protectContent,
-			reply_to_message_id = replyToMessageId,
-			allow_sending_without_reply = allowSendingWithoutReply,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            document = document,
+            message_thread_id = messageThreadId,
+            thumbnail = thumbnail,
+            caption = caption,
+            parse_mode = parseMode.ToString(),
+            caption_entities = captionEntities,
+            disable_content_type_detection = disableContentTypeDetection,
+            disable_notification = disableNotification,
+            protect_content = protectContent,
+            reply_to_message_id = replyToMessageId,
+            allow_sending_without_reply = allowSendingWithoutReply,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("sendDocument", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

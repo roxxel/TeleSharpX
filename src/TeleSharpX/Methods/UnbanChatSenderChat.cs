@@ -14,9 +14,9 @@ public static class UnbanChatSenderChat
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			sender_chat_id = senderChatId
-		};
+            chat_id = chatId,
+            sender_chat_id = senderChatId
+        };
         var resp = await api.Send<bool>("unbanChatSenderChat", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

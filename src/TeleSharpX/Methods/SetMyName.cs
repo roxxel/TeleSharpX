@@ -14,9 +14,9 @@ public static class SetMyName
     {
         var api = cl._apiClient;
         var body = new {
-			name = name,
-			language_code = languageCode
-		};
+            name = name,
+            language_code = languageCode
+        };
         var resp = await api.Send<bool>("setMyName", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

@@ -14,8 +14,8 @@ public static class GetStickerSet
     {
         var api = cl._apiClient;
         var body = new {
-			name = name
-		};
+            name = name
+        };
         var resp = await api.Send<StickerSet>("getStickerSet", System.Net.Http.HttpMethod.Get, body);
         if (resp.Ok)
         {

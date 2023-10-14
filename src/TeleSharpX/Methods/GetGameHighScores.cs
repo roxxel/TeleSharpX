@@ -14,11 +14,11 @@ public static class GetGameHighScores
     {
         var api = cl._apiClient;
         var body = new {
-			user_id = userId,
-			chat_id = chatId,
-			message_id = messageId,
-			inline_message_id = inlineMessageId
-		};
+            user_id = userId,
+            chat_id = chatId,
+            message_id = messageId,
+            inline_message_id = inlineMessageId
+        };
         var resp = await api.Send<System.Collections.Generic.IEnumerable<GameHighScore>>("getGameHighScores", System.Net.Http.HttpMethod.Get, body);
         if (resp.Ok)
         {

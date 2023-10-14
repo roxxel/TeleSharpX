@@ -14,9 +14,9 @@ public static class CloseForumTopic
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			message_thread_id = messageThreadId
-		};
+            chat_id = chatId,
+            message_thread_id = messageThreadId
+        };
         var resp = await api.Send<bool>("closeForumTopic", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

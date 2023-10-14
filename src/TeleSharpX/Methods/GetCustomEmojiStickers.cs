@@ -14,8 +14,8 @@ public static class GetCustomEmojiStickers
     {
         var api = cl._apiClient;
         var body = new {
-			custom_emoji_ids = customEmojiIds
-		};
+            custom_emoji_ids = customEmojiIds
+        };
         var resp = await api.Send<System.Collections.Generic.IEnumerable<Sticker>>("getCustomEmojiStickers", System.Net.Http.HttpMethod.Get, body);
         if (resp.Ok)
         {

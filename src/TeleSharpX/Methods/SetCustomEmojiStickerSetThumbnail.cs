@@ -14,9 +14,9 @@ public static class SetCustomEmojiStickerSetThumbnail
     {
         var api = cl._apiClient;
         var body = new {
-			name = name,
-			custom_emoji_id = customEmojiId
-		};
+            name = name,
+            custom_emoji_id = customEmojiId
+        };
         var resp = await api.Send<bool>("setCustomEmojiStickerSetThumbnail", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

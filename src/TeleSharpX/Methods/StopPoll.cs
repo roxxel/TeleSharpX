@@ -14,10 +14,10 @@ public static class StopPoll
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			message_id = messageId,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            message_id = messageId,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Poll>("stopPoll", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

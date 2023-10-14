@@ -14,9 +14,9 @@ public static class SetChatStickerSet
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			sticker_set_name = stickerSetName
-		};
+            chat_id = chatId,
+            sticker_set_name = stickerSetName
+        };
         var resp = await api.Send<bool>("setChatStickerSet", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

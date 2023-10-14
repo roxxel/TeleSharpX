@@ -14,23 +14,23 @@ public static class SendAnimation
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			animation = animation,
-			message_thread_id = messageThreadId,
-			duration = duration,
-			width = width,
-			height = height,
-			thumbnail = thumbnail,
-			caption = caption,
-			parse_mode = parseMode.ToString(),
-			caption_entities = captionEntities,
-			has_spoiler = hasSpoiler,
-			disable_notification = disableNotification,
-			protect_content = protectContent,
-			reply_to_message_id = replyToMessageId,
-			allow_sending_without_reply = allowSendingWithoutReply,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            animation = animation,
+            message_thread_id = messageThreadId,
+            duration = duration,
+            width = width,
+            height = height,
+            thumbnail = thumbnail,
+            caption = caption,
+            parse_mode = parseMode.ToString(),
+            caption_entities = captionEntities,
+            has_spoiler = hasSpoiler,
+            disable_notification = disableNotification,
+            protect_content = protectContent,
+            reply_to_message_id = replyToMessageId,
+            allow_sending_without_reply = allowSendingWithoutReply,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("sendAnimation", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

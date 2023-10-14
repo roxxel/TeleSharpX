@@ -14,11 +14,11 @@ public static class EditForumTopic
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			message_thread_id = messageThreadId,
-			name = name,
-			icon_custom_emoji_id = iconCustomEmojiId
-		};
+            chat_id = chatId,
+            message_thread_id = messageThreadId,
+            name = name,
+            icon_custom_emoji_id = iconCustomEmojiId
+        };
         var resp = await api.Send<bool>("editForumTopic", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

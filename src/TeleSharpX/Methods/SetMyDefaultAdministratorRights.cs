@@ -14,9 +14,9 @@ public static class SetMyDefaultAdministratorRights
     {
         var api = cl._apiClient;
         var body = new {
-			rights = rights,
-			for_channels = forChannels
-		};
+            rights = rights,
+            for_channels = forChannels
+        };
         var resp = await api.Send<bool>("setMyDefaultAdministratorRights", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

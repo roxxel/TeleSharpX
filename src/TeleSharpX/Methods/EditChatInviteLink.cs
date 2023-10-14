@@ -14,13 +14,13 @@ public static class EditChatInviteLink
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			invite_link = inviteLink,
-			name = name,
-			expire_date = expireDate,
-			member_limit = memberLimit,
-			creates_join_request = createsJoinRequest
-		};
+            chat_id = chatId,
+            invite_link = inviteLink,
+            name = name,
+            expire_date = expireDate,
+            member_limit = memberLimit,
+            creates_join_request = createsJoinRequest
+        };
         var resp = await api.Send<ChatInviteLink>("editChatInviteLink", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

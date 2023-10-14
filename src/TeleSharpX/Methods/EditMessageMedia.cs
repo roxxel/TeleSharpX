@@ -14,12 +14,12 @@ public static class EditMessageMedia
     {
         var api = cl._apiClient;
         var body = new {
-			media = media,
-			chat_id = chatId,
-			message_id = messageId,
-			inline_message_id = inlineMessageId,
-			reply_markup = replyMarkup
-		};
+            media = media,
+            chat_id = chatId,
+            message_id = messageId,
+            inline_message_id = inlineMessageId,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("editMessageMedia", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

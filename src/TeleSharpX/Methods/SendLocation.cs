@@ -14,20 +14,20 @@ public static class SendLocation
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			latitude = latitude,
-			longitude = longitude,
-			message_thread_id = messageThreadId,
-			horizontal_accuracy = horizontalAccuracy,
-			live_period = livePeriod,
-			heading = heading,
-			proximity_alert_radius = proximityAlertRadius,
-			disable_notification = disableNotification,
-			protect_content = protectContent,
-			reply_to_message_id = replyToMessageId,
-			allow_sending_without_reply = allowSendingWithoutReply,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            latitude = latitude,
+            longitude = longitude,
+            message_thread_id = messageThreadId,
+            horizontal_accuracy = horizontalAccuracy,
+            live_period = livePeriod,
+            heading = heading,
+            proximity_alert_radius = proximityAlertRadius,
+            disable_notification = disableNotification,
+            protect_content = protectContent,
+            reply_to_message_id = replyToMessageId,
+            allow_sending_without_reply = allowSendingWithoutReply,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("sendLocation", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

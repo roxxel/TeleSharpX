@@ -14,21 +14,21 @@ public static class PromoteChatMember
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			user_id = userId,
-			is_anonymous = isAnonymous,
-			can_manage_chat = canManageChat,
-			can_post_messages = canPostMessages,
-			can_edit_messages = canEditMessages,
-			can_delete_messages = canDeleteMessages,
-			can_manage_video_chats = canManageVideoChats,
-			can_restrict_members = canRestrictMembers,
-			can_promote_members = canPromoteMembers,
-			can_change_info = canChangeInfo,
-			can_invite_users = canInviteUsers,
-			can_pin_messages = canPinMessages,
-			can_manage_topics = canManageTopics
-		};
+            chat_id = chatId,
+            user_id = userId,
+            is_anonymous = isAnonymous,
+            can_manage_chat = canManageChat,
+            can_post_messages = canPostMessages,
+            can_edit_messages = canEditMessages,
+            can_delete_messages = canDeleteMessages,
+            can_manage_video_chats = canManageVideoChats,
+            can_restrict_members = canRestrictMembers,
+            can_promote_members = canPromoteMembers,
+            can_change_info = canChangeInfo,
+            can_invite_users = canInviteUsers,
+            can_pin_messages = canPinMessages,
+            can_manage_topics = canManageTopics
+        };
         var resp = await api.Send<bool>("promoteChatMember", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

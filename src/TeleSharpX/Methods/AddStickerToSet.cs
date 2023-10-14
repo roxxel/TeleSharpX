@@ -14,10 +14,10 @@ public static class AddStickerToSet
     {
         var api = cl._apiClient;
         var body = new {
-			user_id = userId,
-			name = name,
-			sticker = sticker
-		};
+            user_id = userId,
+            name = name,
+            sticker = sticker
+        };
         var resp = await api.Send<bool>("addStickerToSet", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

@@ -14,10 +14,10 @@ public static class PinChatMessage
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			message_id = messageId,
-			disable_notification = disableNotification
-		};
+            chat_id = chatId,
+            message_id = messageId,
+            disable_notification = disableNotification
+        };
         var resp = await api.Send<bool>("pinChatMessage", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

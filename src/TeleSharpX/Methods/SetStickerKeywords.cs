@@ -14,9 +14,9 @@ public static class SetStickerKeywords
     {
         var api = cl._apiClient;
         var body = new {
-			sticker = sticker,
-			keywords = keywords
-		};
+            sticker = sticker,
+            keywords = keywords
+        };
         var resp = await api.Send<bool>("setStickerKeywords", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

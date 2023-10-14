@@ -14,9 +14,9 @@ public static class SetStickerSetTitle
     {
         var api = cl._apiClient;
         var body = new {
-			name = name,
-			title = title
-		};
+            name = name,
+            title = title
+        };
         var resp = await api.Send<bool>("setStickerSetTitle", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

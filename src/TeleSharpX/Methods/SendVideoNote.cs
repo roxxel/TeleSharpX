@@ -14,18 +14,18 @@ public static class SendVideoNote
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			video_note = videoNote,
-			message_thread_id = messageThreadId,
-			duration = duration,
-			length = length,
-			thumbnail = thumbnail,
-			disable_notification = disableNotification,
-			protect_content = protectContent,
-			reply_to_message_id = replyToMessageId,
-			allow_sending_without_reply = allowSendingWithoutReply,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            video_note = videoNote,
+            message_thread_id = messageThreadId,
+            duration = duration,
+            length = length,
+            thumbnail = thumbnail,
+            disable_notification = disableNotification,
+            protect_content = protectContent,
+            reply_to_message_id = replyToMessageId,
+            allow_sending_without_reply = allowSendingWithoutReply,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("sendVideoNote", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

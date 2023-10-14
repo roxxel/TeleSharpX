@@ -14,9 +14,9 @@ public static class SetChatDescription
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			description = description
-		};
+            chat_id = chatId,
+            description = description
+        };
         var resp = await api.Send<bool>("setChatDescription", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

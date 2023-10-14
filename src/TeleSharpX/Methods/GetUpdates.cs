@@ -14,11 +14,11 @@ public static class GetUpdates
     {
         var api = cl._apiClient;
         var body = new {
-			offset = offset,
-			limit = limit,
-			timeout = timeout,
-			allowed_updates = allowedUpdates
-		};
+            offset = offset,
+            limit = limit,
+            timeout = timeout,
+            allowed_updates = allowedUpdates
+        };
         var resp = await api.Send<System.Collections.Generic.IEnumerable<Update>>("getUpdates", System.Net.Http.HttpMethod.Get, body);
         if (resp.Ok)
         {

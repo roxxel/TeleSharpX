@@ -14,8 +14,8 @@ public static class DeleteStickerFromSet
     {
         var api = cl._apiClient;
         var body = new {
-			sticker = sticker
-		};
+            sticker = sticker
+        };
         var resp = await api.Send<bool>("deleteStickerFromSet", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

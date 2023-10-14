@@ -14,15 +14,15 @@ public static class EditMessageText
     {
         var api = cl._apiClient;
         var body = new {
-			text = text,
-			chat_id = chatId,
-			message_id = messageId,
-			inline_message_id = inlineMessageId,
-			parse_mode = parseMode.ToString(),
-			entities = entities,
-			disable_web_page_preview = disableWebPagePreview,
-			reply_markup = replyMarkup
-		};
+            text = text,
+            chat_id = chatId,
+            message_id = messageId,
+            inline_message_id = inlineMessageId,
+            parse_mode = parseMode.ToString(),
+            entities = entities,
+            disable_web_page_preview = disableWebPagePreview,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("editMessageText", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

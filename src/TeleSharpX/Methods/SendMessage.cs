@@ -14,18 +14,18 @@ public static class SendMessage
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			text = text,
-			message_thread_id = messageThreadId,
-			parse_mode = parseMode.ToString(),
-			entities = entities,
-			disable_web_page_preview = disableWebPagePreview,
-			disable_notification = disableNotification,
-			protect_content = protectContent,
-			reply_to_message_id = replyToMessageId,
-			allow_sending_without_reply = allowSendingWithoutReply,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            text = text,
+            message_thread_id = messageThreadId,
+            parse_mode = parseMode.ToString(),
+            entities = entities,
+            disable_web_page_preview = disableWebPagePreview,
+            disable_notification = disableNotification,
+            protect_content = protectContent,
+            reply_to_message_id = replyToMessageId,
+            allow_sending_without_reply = allowSendingWithoutReply,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("sendMessage", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

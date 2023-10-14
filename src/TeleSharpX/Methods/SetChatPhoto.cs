@@ -14,9 +14,9 @@ public static class SetChatPhoto
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			photo = photo
-		};
+            chat_id = chatId,
+            photo = photo
+        };
         var resp = await api.Send<bool>("setChatPhoto", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

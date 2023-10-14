@@ -14,14 +14,14 @@ public static class EditMessageCaption
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			message_id = messageId,
-			inline_message_id = inlineMessageId,
-			caption = caption,
-			parse_mode = parseMode.ToString(),
-			caption_entities = captionEntities,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            message_id = messageId,
+            inline_message_id = inlineMessageId,
+            caption = caption,
+            parse_mode = parseMode.ToString(),
+            caption_entities = captionEntities,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("editMessageCaption", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

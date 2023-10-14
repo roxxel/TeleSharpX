@@ -14,8 +14,8 @@ public static class GetChat
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId
-		};
+            chat_id = chatId
+        };
         var resp = await api.Send<Chat>("getChat", System.Net.Http.HttpMethod.Get, body);
         if (resp.Ok)
         {

@@ -14,9 +14,9 @@ public static class RevokeChatInviteLink
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			invite_link = inviteLink
-		};
+            chat_id = chatId,
+            invite_link = inviteLink
+        };
         var resp = await api.Send<ChatInviteLink>("revokeChatInviteLink", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

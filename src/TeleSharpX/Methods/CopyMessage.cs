@@ -14,19 +14,19 @@ public static class CopyMessage
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			from_chat_id = fromChatId,
-			message_id = messageId,
-			message_thread_id = messageThreadId,
-			caption = caption,
-			parse_mode = parseMode.ToString(),
-			caption_entities = captionEntities,
-			disable_notification = disableNotification,
-			protect_content = protectContent,
-			reply_to_message_id = replyToMessageId,
-			allow_sending_without_reply = allowSendingWithoutReply,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            from_chat_id = fromChatId,
+            message_id = messageId,
+            message_thread_id = messageThreadId,
+            caption = caption,
+            parse_mode = parseMode.ToString(),
+            caption_entities = captionEntities,
+            disable_notification = disableNotification,
+            protect_content = protectContent,
+            reply_to_message_id = replyToMessageId,
+            allow_sending_without_reply = allowSendingWithoutReply,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<MessageId>("copyMessage", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

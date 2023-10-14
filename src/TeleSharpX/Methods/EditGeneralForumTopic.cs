@@ -14,9 +14,9 @@ public static class EditGeneralForumTopic
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			name = name
-		};
+            chat_id = chatId,
+            name = name
+        };
         var resp = await api.Send<bool>("editGeneralForumTopic", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

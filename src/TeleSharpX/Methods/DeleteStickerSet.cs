@@ -14,8 +14,8 @@ public static class DeleteStickerSet
     {
         var api = cl._apiClient;
         var body = new {
-			name = name
-		};
+            name = name
+        };
         var resp = await api.Send<bool>("deleteStickerSet", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

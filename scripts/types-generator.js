@@ -4,6 +4,9 @@ const data = readFileSync('./tg_api_pretty.json')
 const json = JSON.parse(data)
 const models = json.models
 
+const tabTo4Spaces = (str) => {
+    return str.replaceAll("\t", "    ")
+}
 
 const primitives = {
     bool: 'bool',
@@ -92,11 +95,11 @@ namespace TeleSharpX.Types
         })
         final += '\n\t}'
         final += '\n}'
-        writeFileSync(`./export/${snakeToPascal(model.name)}.cs`, final)
+        writeFileSync(`./export/${snakeToPascal(model.name)}.cs`, tabTo4Spaces(final))
         console.log(`written ${snakeToPascal(model.name)}.cs`)
     } else {
         final += model[0]
-        writeFileSync(`./export/${model[1]}.cs`, final)
+        writeFileSync(`./export/${model[1]}.cs`, tabTo4Spaces(final))
         console.log(`written custom ${model[1]}.cs`)
     }
 
@@ -162,7 +165,7 @@ public static class ${snakeToPascal(method.name)}
     }
 }
 `
-    writeFileSync(`./methods/${snakeToPascal(method.name)}.cs`, met)
+    writeFileSync(`./methods/${snakeToPascal(method.name)}.cs`, tabTo4Spaces(met))
     console.log(`written ${snakeToPascal(method.name)}.cs`)
 }
 

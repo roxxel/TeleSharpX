@@ -14,24 +14,24 @@ public static class SendVideo
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			video = video,
-			message_thread_id = messageThreadId,
-			duration = duration,
-			width = width,
-			height = height,
-			thumbnail = thumbnail,
-			caption = caption,
-			parse_mode = parseMode.ToString(),
-			caption_entities = captionEntities,
-			has_spoiler = hasSpoiler,
-			supports_streaming = supportsStreaming,
-			disable_notification = disableNotification,
-			protect_content = protectContent,
-			reply_to_message_id = replyToMessageId,
-			allow_sending_without_reply = allowSendingWithoutReply,
-			reply_markup = replyMarkup
-		};
+            chat_id = chatId,
+            video = video,
+            message_thread_id = messageThreadId,
+            duration = duration,
+            width = width,
+            height = height,
+            thumbnail = thumbnail,
+            caption = caption,
+            parse_mode = parseMode.ToString(),
+            caption_entities = captionEntities,
+            has_spoiler = hasSpoiler,
+            supports_streaming = supportsStreaming,
+            disable_notification = disableNotification,
+            protect_content = protectContent,
+            reply_to_message_id = replyToMessageId,
+            allow_sending_without_reply = allowSendingWithoutReply,
+            reply_markup = replyMarkup
+        };
         var resp = await api.Send<Message>("sendVideo", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

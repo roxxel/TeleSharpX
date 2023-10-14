@@ -14,9 +14,9 @@ public static class AnswerWebAppQuery
     {
         var api = cl._apiClient;
         var body = new {
-			web_app_query_id = webAppQueryId,
-			result = result
-		};
+            web_app_query_id = webAppQueryId,
+            result = result
+        };
         var resp = await api.Send<SentWebAppMessage>("answerWebAppQuery", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

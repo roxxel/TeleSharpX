@@ -14,14 +14,14 @@ public static class CreateNewStickerSet
     {
         var api = cl._apiClient;
         var body = new {
-			user_id = userId,
-			name = name,
-			title = title,
-			stickers = stickers,
-			sticker_format = stickerFormat,
-			sticker_type = stickerType,
-			needs_repainting = needsRepainting
-		};
+            user_id = userId,
+            name = name,
+            title = title,
+            stickers = stickers,
+            sticker_format = stickerFormat,
+            sticker_type = stickerType,
+            needs_repainting = needsRepainting
+        };
         var resp = await api.Send<bool>("createNewStickerSet", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

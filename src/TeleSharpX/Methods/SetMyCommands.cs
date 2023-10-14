@@ -14,10 +14,10 @@ public static class SetMyCommands
     {
         var api = cl._apiClient;
         var body = new {
-			commands = commands,
-			scope = scope,
-			language_code = languageCode
-		};
+            commands = commands,
+            scope = scope,
+            language_code = languageCode
+        };
         var resp = await api.Send<bool>("setMyCommands", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

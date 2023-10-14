@@ -14,9 +14,9 @@ public static class SetStickerEmojiList
     {
         var api = cl._apiClient;
         var body = new {
-			sticker = sticker,
-			emoji_list = emojiList
-		};
+            sticker = sticker,
+            emoji_list = emojiList
+        };
         var resp = await api.Send<bool>("setStickerEmojiList", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

@@ -14,9 +14,9 @@ public static class SetMyShortDescription
     {
         var api = cl._apiClient;
         var body = new {
-			short_description = shortDescription,
-			language_code = languageCode
-		};
+            short_description = shortDescription,
+            language_code = languageCode
+        };
         var resp = await api.Send<bool>("setMyShortDescription", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

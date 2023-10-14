@@ -14,9 +14,9 @@ public static class SetStickerPositionInSet
     {
         var api = cl._apiClient;
         var body = new {
-			sticker = sticker,
-			position = position
-		};
+            sticker = sticker,
+            position = position
+        };
         var resp = await api.Send<bool>("setStickerPositionInSet", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

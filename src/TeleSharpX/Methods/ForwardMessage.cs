@@ -14,13 +14,13 @@ public static class ForwardMessage
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId,
-			from_chat_id = fromChatId,
-			message_id = messageId,
-			message_thread_id = messageThreadId,
-			disable_notification = disableNotification,
-			protect_content = protectContent
-		};
+            chat_id = chatId,
+            from_chat_id = fromChatId,
+            message_id = messageId,
+            message_thread_id = messageThreadId,
+            disable_notification = disableNotification,
+            protect_content = protectContent
+        };
         var resp = await api.Send<Message>("forwardMessage", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

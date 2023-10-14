@@ -14,9 +14,9 @@ public static class GetMyCommands
     {
         var api = cl._apiClient;
         var body = new {
-			scope = scope,
-			language_code = languageCode
-		};
+            scope = scope,
+            language_code = languageCode
+        };
         var resp = await api.Send<System.Collections.Generic.IEnumerable<BotCommand>>("getMyCommands", System.Net.Http.HttpMethod.Get, body);
         if (resp.Ok)
         {

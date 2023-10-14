@@ -14,9 +14,9 @@ public static class SetStickerMaskPosition
     {
         var api = cl._apiClient;
         var body = new {
-			sticker = sticker,
-			mask_position = maskPosition
-		};
+            sticker = sticker,
+            mask_position = maskPosition
+        };
         var resp = await api.Send<bool>("setStickerMaskPosition", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

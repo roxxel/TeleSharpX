@@ -14,8 +14,8 @@ public static class UnhideGeneralForumTopic
     {
         var api = cl._apiClient;
         var body = new {
-			chat_id = chatId
-		};
+            chat_id = chatId
+        };
         var resp = await api.Send<bool>("unhideGeneralForumTopic", System.Net.Http.HttpMethod.Post, body);
         if (resp.Ok)
         {

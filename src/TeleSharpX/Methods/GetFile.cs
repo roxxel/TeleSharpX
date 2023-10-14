@@ -14,8 +14,8 @@ public static class GetFile
     {
         var api = cl._apiClient;
         var body = new {
-			file_id = fileId
-		};
+            file_id = fileId
+        };
         var resp = await api.Send<File>("getFile", System.Net.Http.HttpMethod.Get, body);
         if (resp.Ok)
         {
