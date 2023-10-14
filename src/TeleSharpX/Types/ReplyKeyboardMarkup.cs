@@ -4,13 +4,13 @@ using System.Text.Json.Serialization;
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 namespace TeleSharpX.Types
 {
-	public class ReplyKeyboardMarkup 
+	public class ReplyKeyboardMarkup : ReplyMarkup
 	{
 		/// <summary>
 		/// Array of button rows, each represented by an Array of KeyboardButton objects
 		/// </summary>
 		[JsonPropertyName("keyboard")]
-		public KeyboardButton[][] Keyboard { get; set; }
+		public System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<KeyboardButton>> Keyboard { get; set; }
 		/// <summary>
 		/// Optional. Requests clients to always show the keyboard when the regular keyboard is hidden. Defaults to false, in which case the custom keyboard can be hidden and opened with a keyboard icon.
 		/// </summary>

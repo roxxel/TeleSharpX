@@ -15,6 +15,6 @@ namespace TeleSharpX.Types
 		/// Requested profile pictures (in up to 4 sizes each)
 		/// </summary>
 		[JsonPropertyName("photos")]
-		public PhotoSize[][] Photos { get; set; }
+		public System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<PhotoSize>> Photos { get; set; }
 	}
 }

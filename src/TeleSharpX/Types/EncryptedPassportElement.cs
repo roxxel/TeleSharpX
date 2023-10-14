@@ -30,7 +30,7 @@ namespace TeleSharpX.Types
 		/// Optional. Array of encrypted files with documents provided by the user, available for “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration” and “temporary_registration” types. Files can be decrypted and verified using the accompanying EncryptedCredentials.
 		/// </summary>
 		[JsonPropertyName("files")]
-		public PassportFile[] Files { get; set; }
+		public System.Collections.Generic.IEnumerable<PassportFile> Files { get; set; }
 		/// <summary>
 		/// Optional. Encrypted file with the front side of the document, provided by the user. Available for “passport”, “driver_license”, “identity_card” and “internal_passport”. The file can be decrypted and verified using the accompanying EncryptedCredentials.
 		/// </summary>
@@ -50,7 +50,7 @@ namespace TeleSharpX.Types
 		/// Optional. Array of encrypted files with translated versions of documents provided by the user. Available if requested for “passport”, “driver_license”, “identity_card”, “internal_passport”, “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration” and “temporary_registration” types. Files can be decrypted and verified using the accompanying EncryptedCredentials.
 		/// </summary>
 		[JsonPropertyName("translation")]
-		public PassportFile[] Translation { get; set; }
+		public System.Collections.Generic.IEnumerable<PassportFile> Translation { get; set; }
 		/// <summary>
 		/// Base64-encoded element hash for using in PassportElementErrorUnspecified
 		/// </summary>

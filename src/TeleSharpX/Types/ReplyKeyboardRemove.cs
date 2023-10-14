@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 namespace TeleSharpX.Types
 {
-	public class ReplyKeyboardRemove 
+	public class ReplyKeyboardRemove : ReplyMarkup
 	{
 		/// <summary>
 		/// Requests clients to remove the custom keyboard (user will not be able to summon this keyboard; if you want to hide the keyboard from sight but keep it accessible, use one_time_keyboard in ReplyKeyboardMarkup)

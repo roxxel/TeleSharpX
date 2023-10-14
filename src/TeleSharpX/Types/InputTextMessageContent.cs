@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 namespace TeleSharpX.Types
 {
-	public class InputTextMessageContent : InputMessageContent
+	public class InputTextMessageContent 
 	{
 		/// <summary>
 		/// Text of the message to be sent, 1-4096 characters
@@ -20,7 +20,7 @@ namespace TeleSharpX.Types
 		/// Optional. List of special entities that appear in message text, which can be specified instead of parse_mode
 		/// </summary>
 		[JsonPropertyName("entities")]
-		public MessageEntity[] Entities { get; set; }
+		public System.Collections.Generic.IEnumerable<MessageEntity> Entities { get; set; }
 		/// <summary>
 		/// Optional. Disables link previews for links in the sent message
 		/// </summary>

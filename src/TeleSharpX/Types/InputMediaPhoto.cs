@@ -30,7 +30,7 @@ namespace TeleSharpX.Types
 		/// Optional. List of special entities that appear in the caption, which can be specified instead of parse_mode
 		/// </summary>
 		[JsonPropertyName("caption_entities")]
-		public MessageEntity[] CaptionEntities { get; set; }
+		public System.Collections.Generic.IEnumerable<MessageEntity> CaptionEntities { get; set; }
 		/// <summary>
 		/// Optional. Pass True if the photo needs to be covered with a spoiler animation
 		/// </summary>

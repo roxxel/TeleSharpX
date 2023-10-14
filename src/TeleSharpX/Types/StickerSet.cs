@@ -35,7 +35,7 @@ namespace TeleSharpX.Types
 		/// List of all set stickers
 		/// </summary>
 		[JsonPropertyName("stickers")]
-		public Sticker[] Stickers { get; set; }
+		public System.Collections.Generic.IEnumerable<Sticker> Stickers { get; set; }
 		/// <summary>
 		/// Optional. Sticker set thumbnail in the .WEBP, .TGS, or .WEBM format
 		/// </summary>

@@ -25,6 +25,6 @@ namespace TeleSharpX.Types
 		/// 0-based identifiers of chosen answer options. May be empty if the vote was retracted.
 		/// </summary>
 		[JsonPropertyName("option_ids")]
-		public long[] OptionIds { get; set; }
+		public System.Collections.Generic.IEnumerable<long> OptionIds { get; set; }
 	}
 }

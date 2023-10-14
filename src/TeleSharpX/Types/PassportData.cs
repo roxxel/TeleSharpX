@@ -10,7 +10,7 @@ namespace TeleSharpX.Types
 		/// Array with information about documents and other Telegram Passport elements that was shared with the bot
 		/// </summary>
 		[JsonPropertyName("data")]
-		public EncryptedPassportElement[] Data { get; set; }
+		public System.Collections.Generic.IEnumerable<EncryptedPassportElement> Data { get; set; }
 		/// <summary>
 		/// Encrypted credentials required to decrypt the data
 		/// </summary>

@@ -20,7 +20,7 @@ namespace TeleSharpX.Types
 		/// List of poll options
 		/// </summary>
 		[JsonPropertyName("options")]
-		public PollOption[] Options { get; set; }
+		public System.Collections.Generic.IEnumerable<PollOption> Options { get; set; }
 		/// <summary>
 		/// Total number of users that voted in the poll
 		/// </summary>
@@ -60,7 +60,7 @@ namespace TeleSharpX.Types
 		/// Optional. Special entities like usernames, URLs, bot commands, etc. that appear in the explanation
 		/// </summary>
 		[JsonPropertyName("explanation_entities")]
-		public MessageEntity[] ExplanationEntities { get; set; }
+		public System.Collections.Generic.IEnumerable<MessageEntity> ExplanationEntities { get; set; }
 		/// <summary>
 		/// Optional. Amount of time in seconds the poll will be active after creation
 		/// </summary>

@@ -20,6 +20,6 @@ namespace TeleSharpX.Types
 		/// List of price portions
 		/// </summary>
 		[JsonPropertyName("prices")]
-		public LabeledPrice[] Prices { get; set; }
+		public System.Collections.Generic.IEnumerable<LabeledPrice> Prices { get; set; }
 	}
 }

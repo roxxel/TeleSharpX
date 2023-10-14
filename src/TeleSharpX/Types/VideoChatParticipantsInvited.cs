@@ -10,6 +10,6 @@ namespace TeleSharpX.Types
 		/// New members that were invited to the video chat
 		/// </summary>
 		[JsonPropertyName("users")]
-		public User[] Users { get; set; }
+		public System.Collections.Generic.IEnumerable<User> Users { get; set; }
 	}
 }

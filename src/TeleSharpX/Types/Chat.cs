@@ -50,7 +50,7 @@ namespace TeleSharpX.Types
 		/// Optional. If non-empty, the list of all active chat usernames; for private chats, supergroups and channels. Returned only in getChat.
 		/// </summary>
 		[JsonPropertyName("active_usernames")]
-		public string[] ActiveUsernames { get; set; }
+		public System.Collections.Generic.IEnumerable<string> ActiveUsernames { get; set; }
 		/// <summary>
 		/// Optional. Custom emoji identifier of emoji status of the other party in a private chat. Returned only in getChat.
 		/// </summary>

@@ -9,9 +9,19 @@ const primitives = {
     bool: 'bool',
     int: 'long', //bit unefficient, will be fixed later
     str: 'string',
-    float: 'float'
+    float: 'float',
+    true: 'bool',
+    file: 'InputFile',
+    false: 'bool'
 }
 
+const snakeToCamel = str =>
+  str.toLowerCase().replace(/([-_][a-z])/g, group =>
+    group
+      .toUpperCase()
+      .replace('-', '')
+      .replace('_', '')
+  )
 function escapeXml(unsafe) {
     return unsafe.replace(/[<>&'"]/g, function (c) {
         switch (c) {
@@ -30,7 +40,7 @@ const getType = (type) => {
         final = type.optional ? csType + "?" : csType
     } else {
         if (type[0][0] === 'array') {
-            final = `${getType(type[0][1])}[]`
+            final = `System.Collections.Generic.IEnumerable<${getType(type[0][1])}>`
         } else {
             final = type[0]
         }
@@ -51,9 +61,19 @@ const snakeToPascal = (string) => {
 const generateCSharpType = (model) => {
     let final = '//AUTO-GENERATED; PLEASE DO NOT EDIT BY HAND\n'
     if (!Array.isArray(model)) {
+        if (model.name.includes("BotCommandScope") ||
+            model.name.includes("MenuButton")) {
+            return
+        }
         let inheritance = ''
         inheritance = model.name.includes('ChatMember') ? ': ChatMember' : ''
         inheritance = (model.name.includes('Input') && model.name.includes('MessageContent')) ? ': InputMessageContent' : ''
+        inheritance = (model.name.includes('InlineQueryResult')) ? ': InlineQueryResult' : ''
+        inheritance = (model.name.includes('BotCommandScope')) ? ': BotCommandScope' : ''
+        inheritance = (model.name.includes('InputMedia')) ? ': InputMedia' : ''
+        inheritance = (model.name.includes('PassportElementError')) ? ': PassportElementError' : ''
+        inheritance = (model.name === "InlineKeyboardMarkup" || model.name ===  "ReplyKeyboardMarkup" || model.name ===  "ReplyKeyboardRemove" || model.name === "ForceReply") ? ': ReplyMarkup' : ''
+
 
         final += `using TeleSharpX.Types;
 using System.Text.Json.Serialization;
@@ -83,6 +103,69 @@ namespace TeleSharpX.Types
     
 }
 
+const generateMethod = (method) => {
+
+    const params = []
+    method.params.sort((x,y) => Number(x.optional) - Number(y.optional))
+    method.params.forEach(p => {
+        if (method.name === 'sendMediaGroup' && p.name === 'media') {
+            params.push(`System.Collections.Generic.IEnumerable<InputMedia> media`)
+            return
+        }
+        if (p.name === 'parse_mode') {
+            params.push(`ParseMode parseMode = ParseMode.MarkdownV2`)
+            return
+        }
+        if (p.name === 'reply_markup') {
+            params.push(`ReplyMarkup? replyMarkup = null`)
+            return
+        }
+        params.push(
+            `${getType(p.type)}${p.optional ? '?' : ''} ${snakeToCamel(p.name)}` + (p.optional ? ` = null` : '')
+        )
+    })
+    const strParams = params.length > 0 ? `, ${params.join(', ')}` : ''
+    let strBody = `Object body = null;`
+    if (params.length > 0) 
+    {
+        strBody = 'var body = new {\n'
+        strBody += method.params.map(x => {
+            if (x.name === "parse_mode") {
+                return '\t\t\tparse_mode = parseMode.ToString()'
+            }
+            return `\t\t\t${x.name} = ${snakeToCamel(x.name)}`
+        }).join(',\n')
+        strBody += '\n\t\t};'
+    }
+    const met = `// AUTO-GENERATED
+using System;
+using System.Threading.Tasks;
+using TeleSharpX.Types;
+using TeleSharpX;
+    
+
+public static class ${snakeToPascal(method.name)}
+{
+    /// <summary>
+    /// ${escapeXml(method.description.split('\n').join('\n\t\t/// '))}
+    ///</summary>
+    public static async Task<${getType(method.return)}> ${snakeToPascal(method.name)}Async(this TelegramClient cl${strParams})
+    {
+        var api = cl._apiClient;
+        ${strBody}
+        var resp = await api.Send<${getType(method.return)}>("${method.name}", System.Net.Http.HttpMethod.${snakeToPascal(method.type)}, body);
+        if (resp.Ok)
+        {
+            return resp.Result;
+        }
+        throw new Exception(resp.Description);
+    }
+}
+`
+    writeFileSync(`./methods/${snakeToPascal(method.name)}.cs`, met)
+    console.log(`written ${snakeToPascal(method.name)}.cs`)
+}
+
 models.forEach(x => {
     try {
         generateCSharpType(x)
@@ -90,37 +173,10 @@ models.forEach(x => {
         console.error(`Failed proccessing of ${x.name}\n${ex}`)
     }
 })
-generateCSharpType([`using TeleSharpX.Types;
-using System.Text.Json.Serialization;
-using System;
-
-namespace TeleSharpX.Types
-{
-    public enum ChatMemberStatus
-    {
-        Creator,
-        Administrator,
-        Member,
-        Restricted,
-        Kicked
+json.methods.forEach(x => {
+    try {
+        generateMethod(x)
+    } catch (ex) {
+        console.error(`Failed proccessing of ${x.name}\n${ex}`)
     }
-    public class ChatMember
-    {
-        [JsonPropertyName("status")]
-        internal string StringStatus { get; set; }
-
-        public ChatMemberStatus Status => Enum.Parse<ChatMemberStatus>(StringStatus, true);
-    }
-}
-`, 'ChatMember'])
-
-generateCSharpType([`using TeleSharpX.Types;
-
-namespace TeleSharpX.Types
-{
-    public abstract class InputMessageContent
-    {
-    
-    }
-}
-`, 'InputMessageContent'])
+})

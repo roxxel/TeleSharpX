@@ -115,7 +115,7 @@ namespace TeleSharpX.Types
 		/// Optional. For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text
 		/// </summary>
 		[JsonPropertyName("entities")]
-		public MessageEntity[] Entities { get; set; }
+		public System.Collections.Generic.IEnumerable<MessageEntity> Entities { get; set; }
 		/// <summary>
 		/// Optional. Message is an animation, information about the animation. For backward compatibility, when this field is set, the document field will also be set
 		/// </summary>
@@ -135,7 +135,7 @@ namespace TeleSharpX.Types
 		/// Optional. Message is a photo, available sizes of the photo
 		/// </summary>
 		[JsonPropertyName("photo")]
-		public PhotoSize[] Photo { get; set; }
+		public System.Collections.Generic.IEnumerable<PhotoSize> Photo { get; set; }
 		/// <summary>
 		/// Optional. Message is a sticker, information about the sticker
 		/// </summary>
@@ -170,7 +170,7 @@ namespace TeleSharpX.Types
 		/// Optional. For messages with a caption, special entities like usernames, URLs, bot commands, etc. that appear in the caption
 		/// </summary>
 		[JsonPropertyName("caption_entities")]
-		public MessageEntity[] CaptionEntities { get; set; }
+		public System.Collections.Generic.IEnumerable<MessageEntity> CaptionEntities { get; set; }
 		/// <summary>
 		/// Optional. True, if the message media is covered by a spoiler animation
 		/// </summary>
@@ -210,7 +210,7 @@ namespace TeleSharpX.Types
 		/// Optional. New members that were added to the group or supergroup and information about them (the bot itself may be one of these members)
 		/// </summary>
 		[JsonPropertyName("new_chat_members")]
-		public User[] NewChatMembers { get; set; }
+		public System.Collections.Generic.IEnumerable<User> NewChatMembers { get; set; }
 		/// <summary>
 		/// Optional. A member was removed from the group, information about them (this member may be the bot itself)
 		/// </summary>
@@ -225,7 +225,7 @@ namespace TeleSharpX.Types
 		/// Optional. A chat photo was change to this value
 		/// </summary>
 		[JsonPropertyName("new_chat_photo")]
-		public PhotoSize[] NewChatPhoto { get; set; }
+		public System.Collections.Generic.IEnumerable<PhotoSize> NewChatPhoto { get; set; }
 		/// <summary>
 		/// Optional. Service message: the chat photo was deleted
 		/// </summary>

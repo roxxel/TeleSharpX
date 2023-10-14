@@ -20,7 +20,7 @@ namespace TeleSharpX.Types
 		/// List of base64-encoded file hashes
 		/// </summary>
 		[JsonPropertyName("file_hashes")]
-		public string[] FileHashes { get; set; }
+		public System.Collections.Generic.IEnumerable<string> FileHashes { get; set; }
 		/// <summary>
 		/// Error message
 		/// </summary>

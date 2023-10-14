@@ -50,6 +50,6 @@ namespace TeleSharpX.Types
 		/// Optional. A list of update types the bot is subscribed to. Defaults to all update types except chat_member
 		/// </summary>
 		[JsonPropertyName("allowed_updates")]
-		public string[] AllowedUpdates { get; set; }
+		public System.Collections.Generic.IEnumerable<string> AllowedUpdates { get; set; }
 	}
 }
