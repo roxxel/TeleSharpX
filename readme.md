@@ -22,8 +22,6 @@
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
 
 ## Getting Started
 
