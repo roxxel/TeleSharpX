@@ -49,7 +49,7 @@ var client = new TelegramClient(new()
 {
     Token = "Bot Token goes here"
 })
-client.OnMessage += (s,e) => 
+client.OnMessage += async (s,e) => 
 {
     await client.SendMessage(e.From.Id, e.Text);
 };
