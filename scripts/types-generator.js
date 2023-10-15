@@ -65,21 +65,22 @@ const generateCSharpType = (model) => {
     let final = '//AUTO-GENERATED; PLEASE DO NOT EDIT BY HAND\n'
     if (!Array.isArray(model)) {
         if (model.name.includes("BotCommandScope") ||
-            model.name.includes("MenuButton")) {
+            model.name.includes("MenuButton") || 
+            model.name.includes("InlineQueryResult")) {
             return
         }
         let inheritance = ''
-        inheritance = model.name.includes('ChatMember') ? ': ChatMember' : ''
-        inheritance = (model.name.includes('Input') && model.name.includes('MessageContent')) ? ': InputMessageContent' : ''
-        inheritance = (model.name.includes('InlineQueryResult')) ? ': InlineQueryResult' : ''
-        inheritance = (model.name.includes('BotCommandScope')) ? ': BotCommandScope' : ''
-        inheritance = (model.name.includes('InputMedia')) ? ': InputMedia' : ''
-        inheritance = (model.name.includes('PassportElementError')) ? ': PassportElementError' : ''
-        inheritance = (model.name === "InlineKeyboardMarkup" || model.name ===  "ReplyKeyboardMarkup" || model.name ===  "ReplyKeyboardRemove" || model.name === "ForceReply") ? ': ReplyMarkup' : ''
+        inheritance += model.name.includes('ChatMember') ? ': ChatMember' : ''
+        inheritance += (model.name.includes('Input') && model.name.includes('MessageContent')) ? ': InputMessageContent' : ''
+        inheritance += (model.name.includes('InlineQueryResult')) ? ': InlineQueryResult' : ''
+        inheritance += (model.name.includes('BotCommandScope')) ? ': BotCommandScope' : ''
+        inheritance += (model.name.includes('InputMedia')) ? ': InputMedia' : ''
+        inheritance += (model.name.includes('PassportElementError')) ? ': PassportElementError' : ''
+        inheritance += (model.name === "InlineKeyboardMarkup" || model.name ===  "ReplyKeyboardMarkup" || model.name ===  "ReplyKeyboardRemove" || model.name === "ForceReply") ? ': ReplyMarkup' : ''
 
 
         final += `using TeleSharpX.Types;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 namespace TeleSharpX.Types
 {
@@ -91,7 +92,7 @@ namespace TeleSharpX.Types
             }
             const type = getType(x.type)
             final += `\n\t\t/// <summary>\n\t\t/// ${escapeXml(x.description.split('\n').join('\n\t\t/// '))}\n\t\t/// </summary>`
-            final += `\n\t\t[JsonPropertyName("${x.name}")]\n\t\tpublic ${type} ${snakeToPascal(x.name) + (snakeToPascal(model.name) === snakeToPascal(x.name) ? 'T' : '')} { get; set; }`
+            final += `\n\t\t[JsonProperty("${x.name}")]\n\t\tpublic ${type} ${snakeToPascal(x.name) + (snakeToPascal(model.name) === snakeToPascal(x.name) ? 'T' : '')} { get; set; }`
         })
         final += '\n\t}'
         final += '\n}'

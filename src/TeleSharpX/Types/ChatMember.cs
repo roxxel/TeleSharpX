@@ -1,6 +1,6 @@
 //AUTO-GENERATED; PLEASE DO NOT EDIT BY HAND
 using TeleSharpX.Types;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 using System;
 
 namespace TeleSharpX.Types
@@ -15,7 +15,7 @@ namespace TeleSharpX.Types
     }
     public class ChatMember
     {
-        [JsonPropertyName("status")]
+        [JsonProperty("status")]
         internal string StringStatus { get; set; }
 
         public ChatMemberStatus Status => Enum.Parse<ChatMemberStatus>(StringStatus, true);

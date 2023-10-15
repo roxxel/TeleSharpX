@@ -42,7 +42,10 @@ namespace TeleSharpX
                             NewUpdate?.Invoke(this, update);
                         }
 
-                        lastUpdateId = getUpdatesResp.Result.Last().UpdateId + 1;
+                        if (updates.Length > 0)
+                        {
+                            lastUpdateId = getUpdatesResp.Result.Last().UpdateId + 1;
+                        }
                     }
                     catch (Exception ex)
                     {

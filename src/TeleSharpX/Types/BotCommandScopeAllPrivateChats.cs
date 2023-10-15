@@ -1,6 +1,6 @@
 //AUTO-GENERATED; PLEASE DO NOT EDIT BY HAND
 using TeleSharpX.Types;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 namespace TeleSharpX.Types
 {
@@ -9,7 +9,7 @@ namespace TeleSharpX.Types
 		/// <summary>
 		/// Scope type, must be all_private_chats
 		/// </summary>
-		[JsonPropertyName("type")]
+		[JsonProperty("type")]
 		public string Type => "all_private_chats";
 	}
 }

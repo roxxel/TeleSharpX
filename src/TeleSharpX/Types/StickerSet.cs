@@ -1,6 +1,6 @@
 //AUTO-GENERATED; PLEASE DO NOT EDIT BY HAND
 using TeleSharpX.Types;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 namespace TeleSharpX.Types
 {
@@ -9,37 +9,37 @@ namespace TeleSharpX.Types
         /// <summary>
         /// Sticker set name
         /// </summary>
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
         /// <summary>
         /// Sticker set title
         /// </summary>
-        [JsonPropertyName("title")]
+        [JsonProperty("title")]
         public string Title { get; set; }
         /// <summary>
         /// Type of stickers in the set, currently one of “regular”, “mask”, “custom_emoji”
         /// </summary>
-        [JsonPropertyName("sticker_type")]
+        [JsonProperty("sticker_type")]
         public string StickerType { get; set; }
         /// <summary>
         /// True, if the sticker set contains animated stickers
         /// </summary>
-        [JsonPropertyName("is_animated")]
+        [JsonProperty("is_animated")]
         public bool IsAnimated { get; set; }
         /// <summary>
         /// True, if the sticker set contains video stickers
         /// </summary>
-        [JsonPropertyName("is_video")]
+        [JsonProperty("is_video")]
         public bool IsVideo { get; set; }
         /// <summary>
         /// List of all set stickers
         /// </summary>
-        [JsonPropertyName("stickers")]
+        [JsonProperty("stickers")]
         public System.Collections.Generic.IEnumerable<Sticker> Stickers { get; set; }
         /// <summary>
         /// Optional. Sticker set thumbnail in the .WEBP, .TGS, or .WEBM format
         /// </summary>
-        [JsonPropertyName("thumbnail")]
+        [JsonProperty("thumbnail")]
         public PhotoSize Thumbnail { get; set; }
     }
 }

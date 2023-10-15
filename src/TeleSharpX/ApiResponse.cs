@@ -1,16 +1,16 @@
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace TeleSharpX
 {
     public class ApiResponse<T>
     {
-        [JsonPropertyName("ok")]
+        [JsonProperty("ok")]
         public bool Ok { get; set; }
-        [JsonPropertyName("result")]
+        [JsonProperty("result")]
         public T Result { get; set; }
-        [JsonPropertyName("error_code")]
+        [JsonProperty("error_code")]
         public int ErrorCode { get; set; }
-        [JsonPropertyName("description")]
+        [JsonProperty("description")]
         public string Description { get; set; }
     }
 }

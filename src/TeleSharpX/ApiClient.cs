@@ -2,8 +2,10 @@ using System;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace TeleSharpX
 {
@@ -25,9 +27,9 @@ namespace TeleSharpX
             var message = new HttpRequestMessage();
             message.RequestUri = new Uri($"{_endpoint}{methodName}");
             message.Method = method;
-            var bodyStr = JsonSerializer.Serialize(body, new JsonSerializerOptions()
+            var bodyStr = JsonConvert.SerializeObject(body, new JsonSerializerSettings()
             {
-                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+                NullValueHandling = NullValueHandling.Ignore
             });
             if (method != HttpMethod.Get) 
                 message.Content = new StringContent(
@@ -36,7 +38,7 @@ namespace TeleSharpX
                     "application/json");
             var response = await _client.SendAsync(message);
             var respText = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<ApiResponse<T>>(respText);
+            return JsonConvert.DeserializeObject<ApiResponse<T>>(respText);
         }
     }
 }

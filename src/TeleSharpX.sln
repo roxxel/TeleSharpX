@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleSharpX", "TeleSharpX\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleSharpX.Test", "TeleSharpX.Test\TeleSharpX.Test.csproj", "{92863B68-DEA7-47C1-B4D2-68626F2D37A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleSharpX.Giphy", "TeleSharpX.Giphy\TeleSharpX.Giphy.csproj", "{A8229DD7-4F49-413D-BABC-3F1454FDEA32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{92863B68-DEA7-47C1-B4D2-68626F2D37A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92863B68-DEA7-47C1-B4D2-68626F2D37A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92863B68-DEA7-47C1-B4D2-68626F2D37A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8229DD7-4F49-413D-BABC-3F1454FDEA32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8229DD7-4F49-413D-BABC-3F1454FDEA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8229DD7-4F49-413D-BABC-3F1454FDEA32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8229DD7-4F49-413D-BABC-3F1454FDEA32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
