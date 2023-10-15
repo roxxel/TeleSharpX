@@ -18,10 +18,8 @@ public static class DeclineChatJoinRequest
             user_id = userId
         };
         var resp = await api.Send<bool>("declineChatJoinRequest", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

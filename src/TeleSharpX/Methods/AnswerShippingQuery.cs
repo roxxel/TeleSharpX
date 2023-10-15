@@ -20,10 +20,8 @@ public static class AnswerShippingQuery
             error_message = errorMessage
         };
         var resp = await api.Send<bool>("answerShippingQuery", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

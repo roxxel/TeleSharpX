@@ -23,10 +23,8 @@ public static class SetWebhook
             secret_token = secretToken
         };
         var resp = await api.Send<bool>("setWebhook", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

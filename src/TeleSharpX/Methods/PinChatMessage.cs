@@ -19,10 +19,8 @@ public static class PinChatMessage
             disable_notification = disableNotification
         };
         var resp = await api.Send<bool>("pinChatMessage", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

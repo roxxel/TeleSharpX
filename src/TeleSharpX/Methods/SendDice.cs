@@ -24,10 +24,8 @@ public static class SendDice
             reply_markup = replyMarkup
         };
         var resp = await api.Send<Message>("sendDice", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

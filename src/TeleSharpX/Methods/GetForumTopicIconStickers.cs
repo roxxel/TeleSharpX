@@ -20,10 +20,8 @@ public static class GetForumTopicIconStickers
             icon_custom_emoji_id = iconCustomEmojiId
         };
         var resp = await api.Send<System.Collections.Generic.IEnumerable<Sticker>>("getForumTopicIconStickers", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

@@ -19,10 +19,8 @@ public static class SetChatPermissions
             use_independent_chat_permissions = useIndependentChatPermissions
         };
         var resp = await api.Send<bool>("setChatPermissions", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

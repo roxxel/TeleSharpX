@@ -18,10 +18,8 @@ public static class GetChatMember
             user_id = userId
         };
         var resp = await api.Send<ChatMember>("getChatMember", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

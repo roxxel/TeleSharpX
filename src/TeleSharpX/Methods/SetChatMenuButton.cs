@@ -18,10 +18,8 @@ public static class SetChatMenuButton
             menu_button = menuButton
         };
         var resp = await api.Send<bool>("setChatMenuButton", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

@@ -17,10 +17,8 @@ public static class GetChat
             chat_id = chatId
         };
         var resp = await api.Send<Chat>("getChat", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

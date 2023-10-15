@@ -15,10 +15,8 @@ public static class GetWebhookInfo
         var api = cl._apiClient;
         Object body = null;
         var resp = await api.Send<WebhookInfo>("getWebhookInfo", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

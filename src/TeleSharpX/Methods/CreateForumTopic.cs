@@ -20,10 +20,8 @@ public static class CreateForumTopic
             icon_custom_emoji_id = iconCustomEmojiId
         };
         var resp = await api.Send<ForumTopic>("createForumTopic", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

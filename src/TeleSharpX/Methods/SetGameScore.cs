@@ -23,10 +23,8 @@ public static class SetGameScore
             inline_message_id = inlineMessageId
         };
         var resp = await api.Send<Message>("setGameScore", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

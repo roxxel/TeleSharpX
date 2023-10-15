@@ -17,10 +17,8 @@ public static class GetMyDescription
             language_code = languageCode
         };
         var resp = await api.Send<BotDescription>("getMyDescription", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

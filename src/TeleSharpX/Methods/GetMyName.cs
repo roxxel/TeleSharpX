@@ -17,10 +17,8 @@ public static class GetMyName
             language_code = languageCode
         };
         var resp = await api.Send<BotName>("getMyName", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

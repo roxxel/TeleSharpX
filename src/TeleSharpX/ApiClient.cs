@@ -38,7 +38,10 @@ namespace TeleSharpX
                     "application/json");
             var response = await _client.SendAsync(message);
             var respText = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<ApiResponse<T>>(respText);
+            var resp = JsonConvert.DeserializeObject<ApiResponse<T>>(respText);
+            if (resp.Ok)
+                return resp;
+            throw new ApiException(resp.Description, resp.ErrorCode);
         }
     }
 }

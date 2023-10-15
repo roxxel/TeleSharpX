@@ -15,10 +15,8 @@ public static class GetMe
         var api = cl._apiClient;
         Object body = null;
         var resp = await api.Send<User>("getMe", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

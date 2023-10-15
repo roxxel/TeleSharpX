@@ -18,10 +18,8 @@ public static class RevokeChatInviteLink
             invite_link = inviteLink
         };
         var resp = await api.Send<ChatInviteLink>("revokeChatInviteLink", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

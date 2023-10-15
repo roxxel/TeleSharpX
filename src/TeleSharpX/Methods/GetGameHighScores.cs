@@ -20,10 +20,8 @@ public static class GetGameHighScores
             inline_message_id = inlineMessageId
         };
         var resp = await api.Send<System.Collections.Generic.IEnumerable<GameHighScore>>("getGameHighScores", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

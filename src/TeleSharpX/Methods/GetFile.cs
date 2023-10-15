@@ -17,10 +17,8 @@ public static class GetFile
             file_id = fileId
         };
         var resp = await api.Send<File>("getFile", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

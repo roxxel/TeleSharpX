@@ -15,10 +15,8 @@ public static class LogOut
         var api = cl._apiClient;
         Object body = null;
         var resp = await api.Send<bool>("logOut", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

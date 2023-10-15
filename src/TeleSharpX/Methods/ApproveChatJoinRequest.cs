@@ -18,10 +18,8 @@ public static class ApproveChatJoinRequest
             user_id = userId
         };
         var resp = await api.Send<bool>("approveChatJoinRequest", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

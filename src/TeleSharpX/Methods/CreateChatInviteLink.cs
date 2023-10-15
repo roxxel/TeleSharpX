@@ -21,10 +21,8 @@ public static class CreateChatInviteLink
             creates_join_request = createsJoinRequest
         };
         var resp = await api.Send<ChatInviteLink>("createChatInviteLink", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

@@ -18,10 +18,8 @@ public static class SetChatStickerSet
             sticker_set_name = stickerSetName
         };
         var resp = await api.Send<bool>("setChatStickerSet", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

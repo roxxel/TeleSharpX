@@ -18,10 +18,8 @@ public static class SetStickerEmojiList
             emoji_list = emojiList
         };
         var resp = await api.Send<bool>("setStickerEmojiList", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

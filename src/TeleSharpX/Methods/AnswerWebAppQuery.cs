@@ -18,10 +18,8 @@ public static class AnswerWebAppQuery
             result = result
         };
         var resp = await api.Send<SentWebAppMessage>("answerWebAppQuery", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

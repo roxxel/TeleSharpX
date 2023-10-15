@@ -17,10 +17,8 @@ public static class GetChatAdministrators
             chat_id = chatId
         };
         var resp = await api.Send<System.Collections.Generic.IEnumerable<ChatMember>>("getChatAdministrators", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

@@ -19,10 +19,8 @@ public static class UploadStickerFile
             sticker_format = stickerFormat
         };
         var resp = await api.Send<File>("uploadStickerFile", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

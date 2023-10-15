@@ -17,10 +17,8 @@ public static class DeleteStickerSet
             name = name
         };
         var resp = await api.Send<bool>("deleteStickerSet", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

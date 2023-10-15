@@ -17,10 +17,8 @@ public static class DeleteWebhook
             drop_pending_updates = dropPendingUpdates
         };
         var resp = await api.Send<bool>("deleteWebhook", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

@@ -20,10 +20,8 @@ public static class GetUpdates
             allowed_updates = allowedUpdates
         };
         var resp = await api.Send<System.Collections.Generic.IEnumerable<Update>>("getUpdates", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

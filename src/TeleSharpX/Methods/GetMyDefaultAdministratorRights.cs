@@ -17,10 +17,8 @@ public static class GetMyDefaultAdministratorRights
             for_channels = forChannels
         };
         var resp = await api.Send<ChatAdministratorRights>("getMyDefaultAdministratorRights", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

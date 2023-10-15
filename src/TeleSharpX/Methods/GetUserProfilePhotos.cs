@@ -19,10 +19,8 @@ public static class GetUserProfilePhotos
             limit = limit
         };
         var resp = await api.Send<UserProfilePhotos>("getUserProfilePhotos", System.Net.Http.HttpMethod.Get, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

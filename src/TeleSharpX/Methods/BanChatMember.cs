@@ -20,10 +20,8 @@ public static class BanChatMember
             revoke_messages = revokeMessages
         };
         var resp = await api.Send<bool>("banChatMember", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

@@ -20,10 +20,8 @@ public static class EditForumTopic
             icon_custom_emoji_id = iconCustomEmojiId
         };
         var resp = await api.Send<bool>("editForumTopic", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

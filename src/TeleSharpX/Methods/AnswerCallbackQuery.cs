@@ -21,10 +21,8 @@ public static class AnswerCallbackQuery
             cache_time = cacheTime
         };
         var resp = await api.Send<bool>("answerCallbackQuery", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

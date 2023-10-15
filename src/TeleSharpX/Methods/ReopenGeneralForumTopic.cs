@@ -17,10 +17,8 @@ public static class ReopenGeneralForumTopic
             chat_id = chatId
         };
         var resp = await api.Send<bool>("reopenGeneralForumTopic", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

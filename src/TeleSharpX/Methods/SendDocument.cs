@@ -29,10 +29,8 @@ public static class SendDocument
             reply_markup = replyMarkup
         };
         var resp = await api.Send<Message>("sendDocument", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

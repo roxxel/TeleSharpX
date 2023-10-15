@@ -18,10 +18,8 @@ public static class SetStickerKeywords
             keywords = keywords
         };
         var resp = await api.Send<bool>("setStickerKeywords", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

@@ -27,10 +27,8 @@ public static class DeleteMessage
             message_id = messageId
         };
         var resp = await api.Send<bool>("deleteMessage", System.Net.Http.HttpMethod.Post, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }

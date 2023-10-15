@@ -158,11 +158,9 @@ public static class ${snakeToPascal(method.name)}
         var api = cl._apiClient;
         ${strBody}
         var resp = await api.Send<${getType(method.return)}>("${method.name}", System.Net.Http.HttpMethod.${snakeToPascal(method.type)}, body);
-        if (resp.Ok)
-        {
-            return resp.Result;
-        }
-        throw new Exception(resp.Description);
+       
+        return resp.Result;
+        
     }
 }
 `
