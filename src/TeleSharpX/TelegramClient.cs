@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using TeleSharpX.Commands;
 using TeleSharpX.Types;
 
 namespace TeleSharpX
@@ -14,19 +15,30 @@ namespace TeleSharpX
 
         internal ApiClient _apiClient;
         private readonly Polling _poller;
-        
+        private readonly CommandHandler _commandHandler;
+
         public TelegramClient(TelegramConfiguration configuration)
         {
             _configuration = configuration;
             _apiClient = new ApiClient(configuration.Token);
             _poller = new Polling(_apiClient);
             _poller.NewUpdate += PollerOnNewUpdate;
+            _commandHandler = new CommandHandler(this);
         }
 
+        public void Command(string command, Action<CommandContext> handler)
+        {
+            _commandHandler.Add(command, handler);
+        }
+        
         private void PollerOnNewUpdate(object sender, Update e)
         {
-            if (e.ChatJoinRequest != null) OnChatJoinRequest?.Invoke(this, e.ChatJoinRequest); 
-            if (e.Message != null) OnMessage?.Invoke(this, e.Message); 
+            if (e.ChatJoinRequest != null) OnChatJoinRequest?.Invoke(this, e.ChatJoinRequest);
+            if (e.Message != null)
+            {
+                if (!_commandHandler.TryHandle(e.Message))
+                    OnMessage?.Invoke(this, e.Message);
+            } 
             if (e.PreCheckoutQuery != null) OnPreCheckoutQuery?.Invoke(this, e.PreCheckoutQuery);
             if (e.EditedMessage != null) OnEditedMessage?.Invoke(this, e.EditedMessage);
             if (e.ChannelPost != null) OnChannelPost?.Invoke(this, e.ChannelPost);
