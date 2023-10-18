@@ -15,7 +15,7 @@ public static class SendAudio
         var api = cl._apiClient;
         var body = new {
             chat_id = chatId,
-            audio = audio,
+            audio = audio.ToBody(),
             message_thread_id = messageThreadId,
             caption = caption,
             parse_mode = parseMode.ToString(),
@@ -23,7 +23,7 @@ public static class SendAudio
             duration = duration,
             performer = performer,
             title = title,
-            thumbnail = thumbnail,
+            thumbnail = thumbnail.ToBody(),
             disable_notification = disableNotification,
             protect_content = protectContent,
             reply_to_message_id = replyToMessageId,

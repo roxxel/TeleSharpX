@@ -137,6 +137,10 @@ const generateMethod = (method) => {
             if (x.name === "parse_mode") {
                 return '\t\t\tparse_mode = parseMode.ToString()'
             }
+            if (getType(x.type) === "InputFile") {
+                console.log(getType(x.type))
+                return `\t\t\t${x.name} = ${snakeToCamel(x.name)}.ToBody()`
+            }
             return `\t\t\t${x.name} = ${snakeToCamel(x.name)}`
         }).join(',\n')
         strBody += '\n\t\t};'

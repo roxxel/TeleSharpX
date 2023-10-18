@@ -15,7 +15,7 @@ public static class SendVoice
         var api = cl._apiClient;
         var body = new {
             chat_id = chatId,
-            voice = voice,
+            voice = voice.ToBody(),
             message_thread_id = messageThreadId,
             caption = caption,
             parse_mode = parseMode.ToString(),

@@ -10,124 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50b44261-5817-4c52-a854-86125d3e8881" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/ApiException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TeleSharpX.Test/assets/rick.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scripts/types-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/../scripts/types-generator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TeleSharpX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TeleSharpX/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeleSharpX.Test/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX.Test/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeleSharpX.Test/TeleSharpX.Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX.Test/TeleSharpX.Test.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/ApiClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/ApiClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/AddStickerToSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/AddStickerToSet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/AnswerCallbackQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/AnswerCallbackQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/AnswerInlineQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/AnswerInlineQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/AnswerPreCheckoutQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/AnswerPreCheckoutQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/AnswerShippingQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/AnswerShippingQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/AnswerWebAppQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/AnswerWebAppQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/ApproveChatJoinRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/ApproveChatJoinRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/BanChatMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/BanChatMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/BanChatSenderChat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/BanChatSenderChat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/Close.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/Close.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/CloseForumTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/CloseForumTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/CloseGeneralForumTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/CloseGeneralForumTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/CopyMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/CopyMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/CreateChatInviteLink.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/CreateChatInviteLink.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/CreateForumTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/CreateForumTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/CreateInvoiceLink.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/CreateInvoiceLink.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/CreateNewStickerSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/CreateNewStickerSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/DeclineChatJoinRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/DeclineChatJoinRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteChatPhoto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteChatPhoto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteChatStickerSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteChatStickerSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteForumTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteForumTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteMyCommands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteMyCommands.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteStickerFromSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteStickerFromSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteStickerSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteStickerSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteWebhook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/DeleteWebhook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/EditChatInviteLink.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/EditChatInviteLink.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/EditForumTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/EditForumTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/EditGeneralForumTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/EditGeneralForumTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/EditMessageCaption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/EditMessageCaption.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/EditMessageLiveLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/EditMessageLiveLocation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/EditMessageMedia.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/EditMessageMedia.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/EditMessageReplyMarkup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/EditMessageReplyMarkup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/EditMessageText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/EditMessageText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/ExportChatInviteLink.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/ExportChatInviteLink.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/ForwardMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/ForwardMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetChat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetChat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetChatAdministrators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetChatAdministrators.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetChatMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetChatMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetChatMemberCount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetChatMemberCount.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetChatMenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetChatMenuButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetCustomEmojiStickers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetCustomEmojiStickers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetFile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetFile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetForumTopicIconStickers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetForumTopicIconStickers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetGameHighScores.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetGameHighScores.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetMe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetMe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetMyCommands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetMyCommands.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetMyDefaultAdministratorRights.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetMyDefaultAdministratorRights.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetMyDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetMyDescription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetMyName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetMyName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetMyShortDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetMyShortDescription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetStickerSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetStickerSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetUpdates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetUpdates.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetUserProfilePhotos.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetUserProfilePhotos.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/GetWebhookInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/GetWebhookInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/HideGeneralForumTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/HideGeneralForumTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/LeaveChat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/LeaveChat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/LogOut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/LogOut.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/PinChatMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/PinChatMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/PromoteChatMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/PromoteChatMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/ReopenForumTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/ReopenForumTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/ReopenGeneralForumTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/ReopenGeneralForumTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/RestrictChatMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/RestrictChatMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/RevokeChatInviteLink.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/RevokeChatInviteLink.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendAnimation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendChatAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendChatAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendContact.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendContact.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendDice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendDice.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendDocument.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendDocument.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendInvoice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendInvoice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendLocation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendMediaGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendMediaGroup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendMessage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendPhoto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendPhoto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendPoll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendPoll.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendSticker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendSticker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendVenue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendVenue.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendVideo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendVideo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendVideoNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendVideoNote.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SendVoice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SendVoice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatAdministratorCustomTitle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatAdministratorCustomTitle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatDescription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatMenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatMenuButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatPermissions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatPermissions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatPhoto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatPhoto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatStickerSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatStickerSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatTitle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetChatTitle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetCustomEmojiStickerSetThumbnail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetCustomEmojiStickerSetThumbnail.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetGameScore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetGameScore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetMyCommands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetMyCommands.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetMyDefaultAdministratorRights.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetMyDefaultAdministratorRights.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetMyDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetMyDescription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetMyName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetMyName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetMyShortDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetMyShortDescription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetPassportDataErrors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetPassportDataErrors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerEmojiList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerEmojiList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerKeywords.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerKeywords.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerMaskPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerMaskPosition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerPositionInSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerPositionInSet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerSetThumbnail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerSetThumbnail.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerSetTitle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetStickerSetTitle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/SetWebhook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/SetWebhook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/StopMessageLiveLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/StopMessageLiveLocation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/StopPoll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/StopPoll.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/UnbanChatMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/UnbanChatMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/UnbanChatSenderChat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/UnbanChatSenderChat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/UnhideGeneralForumTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/UnhideGeneralForumTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/UnpinAllChatMessages.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/UnpinAllChatMessages.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/UnpinAllForumTopicMessages.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/UnpinAllForumTopicMessages.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/UnpinAllGeneralForumTopicMessages.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/UnpinAllGeneralForumTopicMessages.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/UnpinChatMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/UnpinChatMessage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeleSharpX/Methods/UploadStickerFile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Methods/UploadStickerFile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeleSharpX/Types/InputFile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/Types/InputFile.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,12 +77,16 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2Wig92OQXdF7tLLm11wYK3hHDxt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -201,7 +107,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.TeleSharpX.Giphy">
+  <component name="RunManager" selected=".NET Project.TeleSharpX.Test">
     <configuration name="TeleSharpX" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -268,6 +174,7 @@
       <workItem from="1697220664229" duration="44000" />
       <workItem from="1697223151484" duration="6652000" />
       <workItem from="1697293457575" duration="8494000" />
+      <workItem from="1697477555906" duration="2028000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit (half working types)">
       <option name="closed" value="true" />
@@ -325,6 +232,7 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit (half working types)" />
     <MESSAGE value="Working methods (except cases when sending files using multipart form data)" />

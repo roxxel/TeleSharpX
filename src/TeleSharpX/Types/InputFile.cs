@@ -1,3 +1,5 @@
+using System.IO;
+
 namespace TeleSharpX.Types
 {
     public enum InputFileType
@@ -8,7 +10,10 @@ namespace TeleSharpX.Types
     public class InputFile
     {
         public InputFileType Type { get; internal set; }
-        private string _id;
+        internal string _id;
+        internal byte[] _file;
+        internal string _name;
+
         internal InputFile()
         {
             
@@ -22,5 +27,25 @@ namespace TeleSharpX.Types
                 _id = id
             };
         }
+
+        public static InputFile FromFilePath(string path)
+        {
+            return new InputFile()
+            {
+                Type = InputFileType.File,
+                _file = System.IO.File.ReadAllBytes(path),
+                _name = Path.GetFileName(path),
+            };
+        }
+        public static InputFile FromUrl(string url)
+        {
+            return new InputFile()
+            {
+                Type = InputFileType.Id,
+                _id = url
+            };
+        }
+
+        internal InputFile ToBody() => this;
     }
 }

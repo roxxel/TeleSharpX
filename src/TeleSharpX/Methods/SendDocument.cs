@@ -15,9 +15,9 @@ public static class SendDocument
         var api = cl._apiClient;
         var body = new {
             chat_id = chatId,
-            document = document,
+            document = document.ToBody(),
             message_thread_id = messageThreadId,
-            thumbnail = thumbnail,
+            thumbnail = thumbnail.ToBody(),
             caption = caption,
             parse_mode = parseMode.ToString(),
             caption_entities = captionEntities,

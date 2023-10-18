@@ -15,12 +15,12 @@ public static class SendVideo
         var api = cl._apiClient;
         var body = new {
             chat_id = chatId,
-            video = video,
+            video = video.ToBody(),
             message_thread_id = messageThreadId,
             duration = duration,
             width = width,
             height = height,
-            thumbnail = thumbnail,
+            thumbnail = thumbnail.ToBody(),
             caption = caption,
             parse_mode = parseMode.ToString(),
             caption_entities = captionEntities,

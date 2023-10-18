@@ -5,6 +5,7 @@ using System.Text.Json;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using TeleSharpX.Types;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace TeleSharpX
@@ -27,15 +28,35 @@ namespace TeleSharpX
             var message = new HttpRequestMessage();
             message.RequestUri = new Uri($"{_endpoint}{methodName}");
             message.Method = method;
-            var bodyStr = JsonConvert.SerializeObject(body, new JsonSerializerSettings()
+
+            if (method != HttpMethod.Get)
             {
-                NullValueHandling = NullValueHandling.Ignore
-            });
-            if (method != HttpMethod.Get) 
-                message.Content = new StringContent(
-                    bodyStr, 
-                    Encoding.UTF8, 
-                    "application/json");
+                MultipartFormDataContent form = new MultipartFormDataContent();
+                var fields = body.GetType().GetProperties();
+                foreach (var field in fields)
+                {
+                    var name = field.Name;
+                    if (field.GetValue(body) == null) continue;
+                    if (field.PropertyType == typeof(InputFile))
+                    {
+                        var value = field.GetValue(body) as InputFile;
+                        if (value.Type == InputFileType.Id)
+                        {
+                            form.Add(new StringContent(value._id), name);
+                        }
+                        else if (value.Type == InputFileType.File)
+                        {
+                            form.Add(new ByteArrayContent(value._file, 0, value._file.Length), name, value._name);
+                        }
+                    }
+                    else
+                    {
+                        form.Add(new StringContent(field.GetValue(body).ToString()), name);
+                    }
+                }
+
+                message.Content = form;
+            }
             var response = await _client.SendAsync(message);
             var respText = await response.Content.ReadAsStringAsync();
             var resp = JsonConvert.DeserializeObject<ApiResponse<T>>(respText);

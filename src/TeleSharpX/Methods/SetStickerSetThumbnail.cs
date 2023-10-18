@@ -16,7 +16,7 @@ public static class SetStickerSetThumbnail
         var body = new {
             name = name,
             user_id = userId,
-            thumbnail = thumbnail
+            thumbnail = thumbnail.ToBody()
         };
         var resp = await api.Send<bool>("setStickerSetThumbnail", System.Net.Http.HttpMethod.Post, body);
        

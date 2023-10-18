@@ -15,7 +15,7 @@ public static class SendSticker
         var api = cl._apiClient;
         var body = new {
             chat_id = chatId,
-            sticker = sticker,
+            sticker = sticker.ToBody(),
             message_thread_id = messageThreadId,
             emoji = emoji,
             disable_notification = disableNotification,

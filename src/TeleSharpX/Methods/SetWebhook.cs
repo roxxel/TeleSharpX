@@ -15,7 +15,7 @@ public static class SetWebhook
         var api = cl._apiClient;
         var body = new {
             url = url,
-            certificate = certificate,
+            certificate = certificate.ToBody(),
             ip_address = ipAddress,
             max_connections = maxConnections,
             allowed_updates = allowedUpdates,

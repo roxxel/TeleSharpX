@@ -15,7 +15,7 @@ public static class SendPhoto
         var api = cl._apiClient;
         var body = new {
             chat_id = chatId,
-            photo = photo,
+            photo = photo.ToBody(),
             message_thread_id = messageThreadId,
             caption = caption,
             parse_mode = parseMode.ToString(),

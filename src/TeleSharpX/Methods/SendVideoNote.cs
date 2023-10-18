@@ -15,11 +15,11 @@ public static class SendVideoNote
         var api = cl._apiClient;
         var body = new {
             chat_id = chatId,
-            video_note = videoNote,
+            video_note = videoNote.ToBody(),
             message_thread_id = messageThreadId,
             duration = duration,
             length = length,
-            thumbnail = thumbnail,
+            thumbnail = thumbnail.ToBody(),
             disable_notification = disableNotification,
             protect_content = protectContent,
             reply_to_message_id = replyToMessageId,

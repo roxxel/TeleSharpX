@@ -15,7 +15,7 @@ public static class UploadStickerFile
         var api = cl._apiClient;
         var body = new {
             user_id = userId,
-            sticker = sticker,
+            sticker = sticker.ToBody(),
             sticker_format = stickerFormat
         };
         var resp = await api.Send<File>("uploadStickerFile", System.Net.Http.HttpMethod.Post, body);
