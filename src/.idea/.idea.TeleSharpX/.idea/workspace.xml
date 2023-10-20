@@ -9,12 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b44261-5817-4c52-a854-86125d3e8881" name="Changes" comment="feat(core): File sending&#10;Now all requests is sent through with multipart/form-data">
-      <change afterPath="$PROJECT_DIR$/TeleSharpX/Commands/CommandContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX.Test/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX.Test/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/CommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/CommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/TeleSharpX.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/TeleSharpX.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeleSharpX/TelegramClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/TelegramClient.cs" afterDir="false" />
+    <list default="true" id="50b44261-5817-4c52-a854-86125d3e8881" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TeleSharpX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TeleSharpX/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,29 +64,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
-      "/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
-      "/Users/mac/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/mac/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.TeleSharpX.Test">
     <configuration name="TeleSharpX" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -158,7 +154,8 @@
       <workItem from="1697220664229" duration="44000" />
       <workItem from="1697223151484" duration="6652000" />
       <workItem from="1697293457575" duration="8494000" />
-      <workItem from="1697477555906" duration="3485000" />
+      <workItem from="1697477555906" duration="3983000" />
+      <workItem from="1697706075738" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit (half working types)">
       <option name="closed" value="true" />
@@ -216,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697645680114</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(commands): Implemented basic command handling">
+      <option name="closed" value="true" />
+      <created>1697666765886</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697666765886</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +238,7 @@
     <MESSAGE value="fix: replaced \t with 4 spaces" />
     <MESSAGE value="Added example" />
     <MESSAGE value="feat(core): File sending&#10;Now all requests is sent through with multipart/form-data" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(core): File sending&#10;Now all requests is sent through with multipart/form-data" />
+    <MESSAGE value="feat(commands): Implemented basic command handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(commands): Implemented basic command handling" />
   </component>
 </project>

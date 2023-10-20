@@ -67,7 +67,7 @@ namespace TeleSharpX
         public event EventHandler<Message> OnChannelPost;
         /// <summary>
         /// New version of a channel post that is known to the bot and was edited
-        /// </summary>
+        ///</summary>
         public event EventHandler<Message> OnEditedChannelPost;
         /// <summary>
         /// New incoming inline query
