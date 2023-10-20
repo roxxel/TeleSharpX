@@ -33,10 +33,10 @@ jobs:
           PACKAGE_NAME: TeleSharpX
 
           # Filepath with version info, relative to root of repository & defaults to PROJECT_FILE_PATH
-          # VERSION_FILE_PATH: Directory.Build.props
+          VERSION_FILE_PATH: TeleSharpX.csproj
 
           # Regex pattern to extract version info in a capturing group
-          # VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
+          VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
 
           # Useful with external providers like Nerdbank.GitVersioning, ignores VERSION_FILE_PATH & VERSION_REGEX
           VERSION_STATIC: 1.0.0
