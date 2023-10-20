@@ -3,12 +3,15 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <Nullable>enable</Nullable>
+        <Version>1.0.1</Version>
+        <PackageReadmeFile>../../readme.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-      <PackageReference Include="System.Text.Json" Version="7.0.3" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="System.Text.Json" Version="7.0.3" />
+        <None Include="../../readme.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
-
+    
 </Project>
