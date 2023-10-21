@@ -1,17 +1,3 @@
-  
-<p align="center">
-  <h3 align="center">TeleSharpX</h3>
-
-  <p align="center">
-    Modern SDK for Telegram Bot API made for .NET 
-    <br/>
-    <br/>
-    <a href="https://github.com/roxxel/TeleSharpX"><strong>Explore the docs » (soon)</strong></a>
-    <br/>
-    <br/>
-  </p>
-</p>
-
 ![Contributors](https://img.shields.io/github/contributors/roxxel/TeleSharpX?color=dark-green) ![Forks](https://img.shields.io/github/forks/roxxel/TeleSharpX?style=social) ![Stargazers](https://img.shields.io/github/stars/roxxel/TeleSharpX?style=social) ![Issues](https://img.shields.io/github/issues/roxxel/TeleSharpX) ![License](https://img.shields.io/github/license/roxxel/TeleSharpX) 
 
 ## Table Of Contents
@@ -25,7 +11,7 @@
 
 ## Getting Started
 
-Library us built for .NET Standard 2.1
+Library is built for .NET Standard 2.1
 
 
 ### Prerequisites

@@ -3,14 +3,16 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <Nullable>enable</Nullable>
-        <Version>1.1.5</Version>
-        <PackageReadmeFile>readme.txt</PackageReadmeFile>
+        <Version>1.1.6</Version>
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/roxxel/telesharpx</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="System.Text.Json" Version="7.0.3" />
-        <Content Include="readme.txt" PackagePath="\" Pack="true" />
+        <None Include="readme.md" PackagePath="\" Pack="true" />
     </ItemGroup>
 
     
