@@ -4,13 +4,13 @@
         <TargetFramework>netstandard2.1</TargetFramework>
         <Nullable>enable</Nullable>
         <Version>1.1.2</Version>
-        <PackageReadmeFile>readme.md</PackageReadmeFile>
+        <PackageReadmeFile>readme.txt</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="System.Text.Json" Version="7.0.3" />
-        <None Include="../../readme.md" Pack="true" PackagePath="\"/>
+        <None Include="../../readme.txt" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
     
