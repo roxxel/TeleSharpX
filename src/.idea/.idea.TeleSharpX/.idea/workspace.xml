@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b44261-5817-4c52-a854-86125d3e8881" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TeleSharpX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TeleSharpX/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="50b44261-5817-4c52-a854-86125d3e8881" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -46,8 +45,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a0343966dc7941f3a32797cca2eb3636c0400/29/5c254a03/Exception.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a0343966dc7941f3a32797cca2eb3636c0400/8e/77cf0979/Enum.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b1825147c76d47e6a30546990ecc0fe0a20000/76/9e46727a/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/mac/RiderProjects/telesharpx/src/TeleSharpX/Methods/AnswerCallbackQuery.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mac/RiderProjects/telesharpx/src/TeleSharpX/TelegramClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TeleSharpX/obj/Debug/netstandard2.1/TeleSharpX.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -156,6 +158,7 @@
       <workItem from="1697293457575" duration="8494000" />
       <workItem from="1697477555906" duration="3983000" />
       <workItem from="1697706075738" duration="244000" />
+      <workItem from="1697843803334" duration="663000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit (half working types)">
       <option name="closed" value="true" />
@@ -221,7 +224,31 @@
       <option name="project" value="LOCAL" />
       <updated>1697666765886</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add readme to package and version">
+      <option name="closed" value="true" />
+      <created>1697844099561</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697844099561</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change something">
+      <option name="closed" value="true" />
+      <created>1697844230690</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697844230690</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat(core): Automatic deploying to nuget is finished">
+      <option name="closed" value="true" />
+      <created>1697844802611</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1697844802611</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +266,9 @@
     <MESSAGE value="Added example" />
     <MESSAGE value="feat(core): File sending&#10;Now all requests is sent through with multipart/form-data" />
     <MESSAGE value="feat(commands): Implemented basic command handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(commands): Implemented basic command handling" />
+    <MESSAGE value="add readme to package and version" />
+    <MESSAGE value="Change something" />
+    <MESSAGE value="feat(core): Automatic deploying to nuget is finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(core): Automatic deploying to nuget is finished" />
   </component>
 </project>

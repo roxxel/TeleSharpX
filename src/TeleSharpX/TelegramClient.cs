@@ -31,6 +31,15 @@ namespace TeleSharpX
             _commandHandler.Add(command, handler);
         }
         
+        public async Task StartPolling()
+        {
+            await _poller.StartPolling();
+        }
+
+        public void StopPolling()
+        {
+            _poller.StopPolling();
+        }
         private void PollerOnNewUpdate(object sender, Update e)
         {
             if (e.ChatJoinRequest != null) OnChatJoinRequest?.Invoke(this, e.ChatJoinRequest);
@@ -110,9 +119,6 @@ namespace TeleSharpX
         /// </summary>
         public event EventHandler<ChatJoinRequest> OnChatJoinRequest;
         
-        public async Task StartPolling()
-        {
-            await _poller.StartPolling();
-        }
+        
     }
 }
