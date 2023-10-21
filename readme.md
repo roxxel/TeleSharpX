@@ -16,16 +16,18 @@
 
 ## Table Of Contents
 
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
+- [Table Of Contents](#table-of-contents)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+  - [Creating A Pull Request](#creating-a-pull-request)
+- [License](#license)
 
 ## Getting Started
 
-Library us built for .NET Standard 2.1
+Library is built for .NET Standard 2.1
 
 
 ### Prerequisites

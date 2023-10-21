@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b44261-5817-4c52-a854-86125d3e8881" name="Changes" comment="" />
+    <list default="true" id="50b44261-5817-4c52-a854-86125d3e8881" name="Changes" comment="fix">
+      <change beforePath="$PROJECT_DIR$/TeleSharpX/TeleSharpX.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TeleSharpX/TeleSharpX.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -45,7 +52,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a0343966dc7941f3a32797cca2eb3636c0400/29/5c254a03/Exception.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a0343966dc7941f3a32797cca2eb3636c0400/8e/77cf0979/Enum.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b1825147c76d47e6a30546990ecc0fe0a20000/76/9e46727a/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TeleSharpX/ApiResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TeleSharpX/CommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TeleSharpX/Polling.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TeleSharpX/TelegramClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/mac/RiderProjects/telesharpx/src/TeleSharpX/TelegramClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TeleSharpX/Types/InputFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TeleSharpX/obj/Debug/netstandard2.1/TeleSharpX.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -66,30 +78,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
-      &quot;/Users/mac/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
+      "/Users/mac/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
+      "/Users/mac/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.TeleSharpX.Test">
+    <configuration name="Publish TeleSharpX to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/TeleSharpX/bin/Release/netstandard2.1/publish" target_framework="netstandard2.1" uuid_high="4234220320358812853" uuid_low="-5421023940059488998" />
+      <method v="2" />
+    </configuration>
     <configuration name="TeleSharpX" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -159,6 +175,7 @@
       <workItem from="1697477555906" duration="3983000" />
       <workItem from="1697706075738" duration="244000" />
       <workItem from="1697843803334" duration="663000" />
+      <workItem from="1697898499832" duration="1499000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit (half working types)">
       <option name="closed" value="true" />
@@ -248,13 +265,115 @@
       <option name="project" value="LOCAL" />
       <updated>1697844802611</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix: added missing `StopPolling()` method to client">
+      <option name="closed" value="true" />
+      <created>1697898594891</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1697898594891</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix: made sure that StartPolling() stops another poller when called in situation where StartPolling was called previously">
+      <option name="closed" value="true" />
+      <created>1697898817297</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697898817297</updated>
+    </task>
+    <task id="LOCAL-00014" summary="updated version of package">
+      <option name="closed" value="true" />
+      <created>1697898877693</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1697898877693</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix: readme.md incorrectly included">
+      <option name="closed" value="true" />
+      <created>1697898998963</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1697898998963</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix: trying to get readme working😡">
+      <option name="closed" value="true" />
+      <created>1697899530845</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1697899530845</updated>
+    </task>
+    <task id="LOCAL-00017" summary="upd version">
+      <option name="closed" value="true" />
+      <created>1697899637422</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1697899637422</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix:">
+      <option name="closed" value="true" />
+      <created>1697899697220</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1697899697220</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix">
+      <option name="closed" value="true" />
+      <created>1697900053839</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1697900053839</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -269,6 +388,14 @@
     <MESSAGE value="add readme to package and version" />
     <MESSAGE value="Change something" />
     <MESSAGE value="feat(core): Automatic deploying to nuget is finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(core): Automatic deploying to nuget is finished" />
+    <MESSAGE value="fix: added missing `StopPolling()` method to client" />
+    <MESSAGE value="fix: made sure that StartPolling() stops another poller when called in situation where StartPolling was called previously" />
+    <MESSAGE value="updated version of package" />
+    <MESSAGE value="fix: readme.md incorrectly included" />
+    <MESSAGE value="fix: trying to get readme working" />
+    <MESSAGE value="upd version" />
+    <MESSAGE value="fix:" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
