@@ -24,6 +24,10 @@ namespace TeleSharpX
 
         internal async Task StartPolling()
         {
+            if (_cts != null)
+            {
+                _cts.Cancel();
+            }
             _cts = new CancellationTokenSource();
             _task = Task.Run(async () =>
             {
