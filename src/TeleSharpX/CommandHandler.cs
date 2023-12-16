@@ -25,7 +25,7 @@ namespace TeleSharpX
 
         public bool TryHandle(Message msg)
         {
-            var commandKey = _commands.Keys.FirstOrDefault(x => msg.Text.StartsWith($"/{x}"));
+            var commandKey = _commands.Keys.FirstOrDefault(x => msg.Text?.StartsWith($"/{x}") ?? false);
             if (commandKey == null)
                 return false;
             var handler = _commands[commandKey];
