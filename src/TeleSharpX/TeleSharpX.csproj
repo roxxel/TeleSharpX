@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <Nullable>enable</Nullable>
-        <Version>1.1.8</Version>
+        <Version>1.1.9</Version>
         <PackageReadmeFile>readme.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/roxxel/telesharpx</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
